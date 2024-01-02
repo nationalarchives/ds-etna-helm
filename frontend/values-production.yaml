@@ -1,0 +1,6 @@
+env:
+  WAGTAIL_API_URL: https://beta.nationalarchives.gov.uk/api/v2
+  WAGTAIL_MEDIA_URL: https://beta.nationalarchives.gov.uk
+
+autoscaling:
+  enabled: true

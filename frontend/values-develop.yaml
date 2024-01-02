@@ -1,0 +1,10 @@
+replicaCount: 1
+
+env:
+  # ENVIRONMENT: develop
+  CACHE_DEFAULT_TIMEOUT: 1
+  WAGTAIL_API_URL: https://feature-headless-4batnpq-rasrzs7pi6sd4.uk-1.platformsh.site/api/v2
+  WAGTAIL_MEDIA_URL: https://develop-sr3snxi-rasrzs7pi6sd4.uk-1.platformsh.site
+
+autoscaling:
+  enabled: false
