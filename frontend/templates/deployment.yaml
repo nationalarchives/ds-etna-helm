@@ -43,15 +43,15 @@ spec:
                   name: {{ .Release.Name }}-auth
                   key: secret-key
             - name: ENVIRONMENT
-              value: "{{ .Values.env.environment }}"
+              value: {{ .Values.env.environment | quote }}
             - name: WAGTAIL_API_URL
-              value: "{{ .Values.env.wagtailApiUrl }}"
+              value: {{ .Values.env.wagtailApiUrl | quote }}
             - name: WAGTAIL_MEDIA_URL
-              value: "{{ .Values.env.wagtailMediaUrl }}"
+              value: {{ .Values.env.wagtailMediaUrl | quote }}
             - name: CACHE_DEFAULT_TIMEOUT
-              value: "{{ .Values.env.cacheDefaultTimeout }}"
+              value: {{ .Values.env.cacheDefaultTimeout | quote }}
             - name: CACHE_DIR
-              value: "{{ .Values.env.cacheDir }}"
+              value: {{ .Values.env.cacheDir | quote }}
           ports:
             - name: http
               containerPort: {{ .Values.service.port }}
