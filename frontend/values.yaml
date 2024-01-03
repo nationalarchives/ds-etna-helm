@@ -60,12 +60,11 @@ ingress:
   #      - chart-example.local
 
 env:
-  ENVIRONMENT: production
-  SECRET_KEY: ""
-  WAGTAIL_API_URL: ""
-  WAGTAIL_MEDIA_URL: ""
-  CACHE_DEFAULT_TIMEOUT: 300
-  CACHE_DIR: /tmp
+  environment: production
+  wagtailApiUrl: ""
+  wagtailMediaUrl: ""
+  cacheDefaultTimeout: 300
+  cacheDir: /tmp
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
